@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+.intro {
+  border: 1px solid green;
+}
 .intro__title {
   font-family: "Fjalla One", "Impact", sans-serif;
 }
@@ -20,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid red;
 }
 .about__image {
   width: 90%;
@@ -31,6 +35,9 @@
   font-family: "Jost", "Veranda", sans-serif;
 }
 
+.skills {
+  border: 1px solid blue;
+}
 .skills__title {
   font-family: "Fjalla One", "Impact", sans-serif;
 }
@@ -38,6 +45,9 @@
   font-family: "Jost", "Veranda", sans-serif;
 }
 
+.projects {
+  border: 1px solid orange;
+}
 .projects__title {
   font-family: "Fjalla One", "Impact", sans-serif;
 }

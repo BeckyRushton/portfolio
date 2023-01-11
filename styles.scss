@@ -9,6 +9,7 @@ $body-font: "Jost", "Veranda", sans-serif;
   box-sizing: border-box;
 }
 .intro {
+  border: 1px solid green;
   &__title {
     font-family: $title-font;
   }
@@ -25,6 +26,7 @@ $body-font: "Jost", "Veranda", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid red;
   &__image {
     width: 90%;
   }
@@ -37,6 +39,7 @@ $body-font: "Jost", "Veranda", sans-serif;
 }
 
 .skills {
+  border: 1px solid blue;
   &__title {
     font-family: $title-font;
   }
@@ -45,6 +48,7 @@ $body-font: "Jost", "Veranda", sans-serif;
   }
 }
 .projects {
+  border: 1px solid orange;
   &__title {
     font-family: $title-font;
   }
