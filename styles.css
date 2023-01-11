@@ -6,13 +6,22 @@
 }
 
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   border: 1px solid green;
 }
 .intro__title {
   font-family: "Fjalla One", "Impact", sans-serif;
+  font-size: 4rem;
+  padding: 20px;
 }
 .intro__tagline {
   font-family: "Jost", "Veranda", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 .navigation {
@@ -30,6 +39,7 @@
 }
 .about__title {
   font-family: "Fjalla One", "Impact", sans-serif;
+  font-size: 2rem;
 }
 .about__text {
   font-family: "Jost", "Veranda", sans-serif;

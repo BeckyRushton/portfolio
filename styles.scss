@@ -9,12 +9,21 @@ $body-font: "Jost", "Veranda", sans-serif;
   box-sizing: border-box;
 }
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   border: 1px solid green;
   &__title {
     font-family: $title-font;
+    font-size: 4rem;
+    padding: 20px;
   }
   &__tagline {
     font-family: $body-font;
+    font-size: 2rem;
+    padding-bottom: 20px;
   }
 }
 
@@ -32,6 +41,7 @@ $body-font: "Jost", "Veranda", sans-serif;
   }
   &__title {
     font-family: $title-font;
+    font-size: 2rem;
   }
   &__text {
     font-family: $body-font;
