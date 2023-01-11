@@ -8,50 +8,104 @@
     <title>Becky Rushton Portfolio</title>
   </head>
   <body>
-    <header>
-      <p class="tagline">Hey, I'm Becky Rushton</p>
-      <h1>A Junior Software Developer based in the UK</h1>
+    <!-- Head of the webpage including tagline and title statement-->
+    <header class="container__intro">
+      <p class="container__intro--tagline">Hey, I'm Becky Rushton</p>
+      <h1 class="container__intro--title">
+        A Junior Software Developer based in the UK
+      </h1>
     </header>
+
+    <!-- Main sections of webpage including about me, technical skills, projects-->
     <main>
-      <article class="about__me">
-        <h3 class="about__me--title">About Me</h3>
+      <!-- Container for about section with title, image and intro text -->
+      <article class="container__about">
+        <h3 class="container__about--title">About Me</h3>
         <img
-          class="img__becky"
+          class="container__about--image"
           src="/images/profile-image.jpg"
           alt="picture of profile owner"
         />
-        <p class="about__me--story">
+        <p class="container__about--text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est facilis
           cum ea sequi perspiciatis illum molestias vero expedita sed, vel
           repellat natus fuga magnam. Odit dolorum et quia voluptatem eius!
         </p>
       </article>
-      <article class="technical__skills">
-        <h3 class="technical__skills--title">Technical Skills</h3>
-        <p class="technical__skills--text">
+
+      <!-- Container for technical skills title, info and icons representing skills -->
+      <article class="container__skills">
+        <h3 class="container__skills--title">Technical Skills</h3>
+        <p class="container__skills--text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil
           voluptatum sapiente ipsa est at repudiandae odit perferendis.
           Repellendus quod commodi quo quae harum sit quaerat facilis, labore
           necessitatibus sapiente?
         </p>
-        <div class="icons">
+        <div class="container__icons">
           <img
+            class="container__icons--springboot"
             src="/images/Skill=Spring Bootspringboot.png"
             alt="Spring Boot Icon"
           />
-          <img src="/images/Skill=Javajava.png" alt="Java Icon" />
-          <img src="/images/Skill=Reactreact.png" alt="React Icon" />
-          <img src="/images/Skill=BEMbem.png" alt="BEM Icon" />
-          <img src="/images/scssicon.png" alt="SCSS Icon" />
           <img
+            class="container__icons--java"
+            src="/images/Skill=Javajava.png"
+            alt="Java Icon"
+          />
+          <img
+            class="container__icons--react"
+            src="/images/Skill=Reactreact.png"
+            alt="React Icon"
+          />
+          <img
+            class="container__icons--bem"
+            src="/images/Skill=BEMbem.png"
+            alt="BEM Icon"
+          />
+          <img
+            class="container__icons--scss"
+            src="/images/scssicon.png"
+            alt="SCSS Icon"
+          />
+          <img
+            class="container__icons--javascript"
             src="/images/Skill=JavaScriptjavascript.png"
             alt="JavaScript Icon"
           />
-          <img src="/images/Skill=CSS3css3.png" alt="CSS Icon" />
-          <img src="/images/Skill=HTML5html.png" alt="HTML Icon" />
-          <img src="/images/Skill=Gitgit.png" alt="Git Icon" />
+          <img
+            class="container__icons--css"
+            src="/images/Skill=CSS3css3.png"
+            alt="CSS Icon"
+          />
+          <img
+            class="container__icons--html"
+            src="/images/Skill=HTML5html.png"
+            alt="HTML Icon"
+          />
+          <img
+            class="container__icons--git"
+            src="/images/Skill=Gitgit.png"
+            alt="Git Icon"
+          />
         </div>
+        <!-- Container for projects with title and links to each project -->
+      </article>
+      <article class="container__projects">
+        <h3 class="container__projects--title">My Projects</h3>
       </article>
     </main>
+    <!-- End of main section -->
+
+    <!-- Footer containing professional links and email info -->
+    <footer>
+      <div class="container__links">
+        <a class="container__links--git" href="#"></a>
+        <a class="container__links--linkedin" href="#"></a>
+        <a class="container__links--cv" href="#"></a>
+      </div>
+      <p class="container__info--email">beckyrushton30@gmail.com</p>
+    </footer>
+    <!-- End of footer and webpage -->
   </body>
 </html>
