@@ -12,6 +12,10 @@
   font-family: "Jost", "Veranda", sans-serif;
 }
 
+.navigation {
+  display: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;

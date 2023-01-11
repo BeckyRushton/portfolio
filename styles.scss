@@ -16,6 +16,11 @@ $body-font: "Jost", "Veranda", sans-serif;
     font-family: $body-font;
   }
 }
+
+.navigation {
+  display: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;
