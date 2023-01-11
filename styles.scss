@@ -1,5 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Jost&display=swap");
+
+$title-font: "Fjalla One", "Impact", sans-serif;
+$body-font: "Jost", "Veranda", sans-serif;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.intro {
+  &__title {
+    font-family: $title-font;
+  }
+  &__tagline {
+    font-family: $body-font;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image {
+    width: 90%;
+  }
+  &__title {
+    font-family: $title-font;
+  }
+  &__text {
+    font-family: $body-font;
+  }
+}
+
+.skills {
+  &__title {
+    font-family: $title-font;
+  }
+  &__text {
+    font-family: $body-font;
+  }
+}
+.projects {
+  &__title {
+    font-family: $title-font;
+  }
+}
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: $body-font;
 }
