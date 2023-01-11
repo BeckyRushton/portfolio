@@ -37,8 +37,11 @@ $body-font: "Jost", "Veranda", sans-serif;
   flex-direction: column;
   align-items: center;
   border: 1px solid red;
+  padding-bottom: 20px;
+
   &__image {
     width: 90%;
+    padding: 10px;
   }
   &__title {
     font-family: $title-font;
@@ -46,6 +49,8 @@ $body-font: "Jost", "Veranda", sans-serif;
   }
   &__text {
     font-family: $body-font;
+    width: 95%;
+    text-align: center;
   }
 }
 // Technical Skills - title, text about my skills, icons representing my skills
