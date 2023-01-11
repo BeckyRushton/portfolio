@@ -8,13 +8,14 @@ $body-font: "Jost", "Veranda", sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
+// Intro/header
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 1px solid green;
+
   &__title {
     font-family: $title-font;
     font-size: 4rem;
@@ -26,11 +27,11 @@ $body-font: "Jost", "Veranda", sans-serif;
     padding-bottom: 20px;
   }
 }
-
+// Navigation
 .navigation {
   display: none;
 }
-
+// About - title, image and text about me
 .about {
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@ $body-font: "Jost", "Veranda", sans-serif;
     font-family: $body-font;
   }
 }
-
+// Technical Skills - title, text about my skills, icons representing my skills
 .skills {
   border: 1px solid blue;
   &__title {
@@ -57,13 +58,15 @@ $body-font: "Jost", "Veranda", sans-serif;
     font-family: $body-font;
   }
 }
+// Projects - title, links and previews of my projects
 .projects {
   border: 1px solid orange;
   &__title {
     font-family: $title-font;
   }
 }
-footer {
+// Footer - links to my personal git, linkedin and cv, and my email
+.contact {
   width: 100%;
   height: 200px;
   background-color: black;
@@ -73,5 +76,23 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-family: $body-font;
+
+  &__info {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info--tagline {
+    font-family: $title-font;
+    font-size: 2.5rem;
+  }
+  &__info--email {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-family: $body-font;
+  }
+  &__links {
+    font-family: $body-font;
+    font-size: 1rem;
+  }
 }
