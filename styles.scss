@@ -2,9 +2,9 @@
 
 $title-font: "Fjalla One", "Impact", sans-serif;
 $body-font: "Jost", "Veranda", sans-serif;
-$background-colour: rgb(102, 156, 156);
-$body-text-colour: white;
-$title-text-colour: rgb(251, 255, 0);
+$background-colour: rgb(240, 241, 235);
+$body-text-colour: rgb(61, 61, 61);
+$title-text-colour: rgb(8, 66, 56);
 
 * {
   padding: 0;
@@ -16,8 +16,6 @@ $title-text-colour: rgb(251, 255, 0);
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 
   &__title {
@@ -25,11 +23,16 @@ $title-text-colour: rgb(251, 255, 0);
     color: $title-text-colour;
     font-size: 4rem;
     padding: 20px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
   }
   &__tagline {
     font-family: $body-font;
     color: $body-text-colour;
     font-size: 2rem;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 // Navigation
@@ -44,8 +47,8 @@ $title-text-colour: rgb(251, 255, 0);
   padding-bottom: 20px;
 
   &__image {
-    width: 90%;
-    padding: 10px;
+    width: 80%;
+    padding: 20px;
   }
   &__title {
     font-family: $title-font;
@@ -93,8 +96,9 @@ $title-text-colour: rgb(251, 255, 0);
 .projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 50px;
 
   &__title {
@@ -103,23 +107,27 @@ $title-text-colour: rgb(251, 255, 0);
     padding: 20px;
     color: $title-text-colour;
   }
-  &__card {
-    width: 95%;
-  }
+
   &__card--01 {
     padding: 10px;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px $title-text-colour;
   }
   &__card--02 {
     padding: 10px;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px $title-text-colour;
   }
   &__card--03 {
     padding: 10px;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px $title-text-colour;
   }
 }
 // Footer - links to my personal git, linkedin and cv, and my email
