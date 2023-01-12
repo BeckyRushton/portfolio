@@ -54,12 +54,28 @@ $body-font: "Jost", "Veranda", sans-serif;
 }
 // Technical Skills - title, text about my skills, icons representing my skills
 .skills {
-  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   &__title {
     font-family: $title-font;
+    font-size: 2rem;
+    padding-top: 10px;
   }
   &__text {
     font-family: $body-font;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+  }
+  &__icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
   }
 }
 // Projects - title, links and previews of my projects
