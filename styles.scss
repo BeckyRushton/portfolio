@@ -62,13 +62,14 @@ $body-font: "Jost", "Veranda", sans-serif;
   &__title {
     font-family: $title-font;
     font-size: 2rem;
-    padding-top: 10px;
+    padding: 15px;
   }
   &__text {
     font-family: $body-font;
     font-size: 1rem;
     text-align: center;
     padding: 10px;
+    width: 70%;
   }
   &__icons {
     display: grid;
