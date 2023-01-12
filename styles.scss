@@ -54,6 +54,7 @@ $title-text-colour: rgb(8, 66, 56);
     font-family: $title-font;
     font-size: 2rem;
     color: $title-text-colour;
+    padding-top: 20px;
   }
   &__text {
     font-family: $body-font;
