@@ -208,16 +208,34 @@ body {
   .intro__artwork {
     display: block;
     width: 100%;
-    padding-right: 100px;
+    padding-right: 50px;
   }
   .about {
     grid-area: about;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    border: 1px solid black;
+  }
+  .about__title__ {
+    width: 30%;
   }
   .about__image {
     width: 30rem;
   }
+  .about__text {
+    width: 80%;
+    text-align: start;
+  }
   .skills {
     grid-area: skills;
+    margin: 20px;
+  }
+  .skills__icons {
+    display: flex;
+    flex-direction: row;
   }
   .projects {
     grid-area: projects;

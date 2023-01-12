@@ -234,23 +234,41 @@ body {
     &__artwork {
       display: block;
       width: 100%;
-      padding-right: 100px;
+      padding-right: 50px;
     }
   }
 
   // About section - profile image and
   .about {
     grid-area: about;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    border: 1px solid black;
+
+    &__title__ {
+      width: 30%;
+    }
+
     &__image {
       width: 30rem;
     }
     &__text {
+      width: 80%;
+      text-align: start;
     }
   }
 
   // Skills section
   .skills {
     grid-area: skills;
+    margin: 20px;
+    &__icons {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   // Projects section
