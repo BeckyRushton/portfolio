@@ -10,6 +10,8 @@ $title-text-colour: rgb(8, 66, 56);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
   background-color: $background-colour;
 }
 // Intro/header
@@ -30,9 +32,7 @@ $title-text-colour: rgb(8, 66, 56);
   &__tagline {
     font-family: $body-font;
     color: $body-text-colour;
-    font-size: 1rem;
-    justify-content: flex-start;
-    align-items: center;
+    font-size: 1.5rem;
   }
 }
 // Navigation
@@ -84,13 +84,13 @@ $title-text-colour: rgb(8, 66, 56);
     padding: 10px;
     width: 70%;
     color: $body-text-colour;
+    margin-top: 1rem;
   }
   &__icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 10px;
   }
 }
 // Projects - title, links and previews of my projects
@@ -100,6 +100,7 @@ $title-text-colour: rgb(8, 66, 56);
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
   padding-bottom: 50px;
 
   &__title {
@@ -108,24 +109,12 @@ $title-text-colour: rgb(8, 66, 56);
     padding: 20px;
     color: $title-text-colour;
   }
-  &__card {
+  &__cards {
+    display: flex;
+    flex-direction: column;
   }
 
-  &__card--01 {
-    padding: 10px;
-    margin: 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px $title-text-colour;
-  }
-  &__card--02 {
-    padding: 10px;
-    margin: 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px $title-text-colour;
-  }
-  &__card--03 {
+  &__card {
     padding: 10px;
     margin: 10px;
     background-color: white;
@@ -177,35 +166,84 @@ $title-text-colour: rgb(8, 66, 56);
   }
 }
 @media screen and (min-width: 1024px) {
-  .navigation {
-    font-family: $body-font;
-    color: $body-text-colour;
-    font-size: 1.5rem;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 5fr 6fr 4fr 4fr 4fr 4fr 4fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "name name name nav nav nav"
+      "title title title image image image"
+      "profile-img profile-img about about about about"
+      "skills skills skills skills skills skills"
+      "projects projects projects projects projects projects"
+      "projects projects projects projects projects projects"
+      "projects projects projects projects projects projects"
+      "projects projects projects projects projects projects"
+      "footer footer footer footer footer footer";
+  }
 
-    &__name {
-      padding-left: 30px;
-    }
-    &__links {
-      padding-right: 30px;
-      display: flex;
-    }
-    &__links--home {
-      padding: 10px;
-    }
-    &__links--about {
-      padding: 10px;
-    }
-    &__links--projects {
-      padding: 10px;
-    }
+  .navigation__name {
+    grid-area: name;
+  }
+  .navigation__links {
+    grid-area: nav;
+  }
+  .intro__title {
+    grid-area: title;
+  }
+  .image__display {
+    grid-area: image;
+  }
+  .about__image {
+    grid-area: profile-img;
+  }
+  .about__text {
+    grid-area: about;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .projects {
+    grid-area: projects;
+  }
+  .footer {
+    grid-area: footer;
   }
 }
+.navigation {
+  font-family: $body-font;
+  color: $body-text-colour;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  &__name {
+    padding-left: 30px;
+  }
+  &__links {
+    padding-right: 30px;
+    display: flex;
+  }
+  &__links--home {
+    padding: 10px;
+  }
+  &__links--about {
+    padding: 10px;
+  }
+  &__links--projects {
+    padding: 10px;
+  }
+}
 .intro__tagline {
   display: none;
+}
+
+.about {
+  &__image {
+    width: 30rem;
+  }
 }
