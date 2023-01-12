@@ -179,7 +179,7 @@ body {
     padding-left: 30px;
   }
   .navigation__links {
-    padding-right: 30px;
+    margin-right: 50px;
     display: flex;
   }
   .navigation__links--home {
@@ -207,7 +207,7 @@ body {
   }
   .intro__artwork {
     display: block;
-    width: 100%;
+    width: 40%;
     padding-right: 50px;
   }
   .about {
@@ -231,7 +231,6 @@ body {
   }
   .skills {
     grid-area: skills;
-    margin: 20px;
   }
   .skills__icons {
     display: flex;
@@ -239,6 +238,15 @@ body {
   }
   .projects {
     grid-area: projects;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
   }
   .contact {
     grid-area: footer;
