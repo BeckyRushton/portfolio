@@ -2,11 +2,15 @@
 
 $title-font: "Fjalla One", "Impact", sans-serif;
 $body-font: "Jost", "Veranda", sans-serif;
+$background-colour: rgb(102, 156, 156);
+$body-text-colour: white;
+$title-text-colour: rgb(251, 255, 0);
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: $background-colour;
 }
 // Intro/header
 .intro {
@@ -18,13 +22,14 @@ $body-font: "Jost", "Veranda", sans-serif;
 
   &__title {
     font-family: $title-font;
+    color: $title-text-colour;
     font-size: 4rem;
     padding: 20px;
   }
   &__tagline {
     font-family: $body-font;
+    color: $body-text-colour;
     font-size: 2rem;
-    padding-bottom: 20px;
   }
 }
 // Navigation
@@ -45,11 +50,13 @@ $body-font: "Jost", "Veranda", sans-serif;
   &__title {
     font-family: $title-font;
     font-size: 2rem;
+    color: $title-text-colour;
   }
   &__text {
     font-family: $body-font;
-    width: 95%;
+    width: 80%;
     text-align: center;
+    color: $body-text-colour;
   }
 }
 // Technical Skills - title, text about my skills, icons representing my skills
@@ -64,6 +71,7 @@ $body-font: "Jost", "Veranda", sans-serif;
     font-family: $title-font;
     font-size: 2rem;
     padding: 15px;
+    color: $title-text-colour;
   }
   &__text {
     font-family: $body-font;
@@ -71,6 +79,7 @@ $body-font: "Jost", "Veranda", sans-serif;
     text-align: center;
     padding: 10px;
     width: 70%;
+    color: $body-text-colour;
   }
   &__icons {
     display: grid;
@@ -92,19 +101,25 @@ $body-font: "Jost", "Veranda", sans-serif;
     font-family: $title-font;
     font-size: 2rem;
     padding: 20px;
+    color: $title-text-colour;
   }
   &__card {
-    width: 90%;
-    flex-wrap: wrap;
+    width: 95%;
   }
   &__card--01 {
     padding: 10px;
+    background-color: white;
+    border-radius: 5px;
   }
   &__card--02 {
     padding: 10px;
+    background-color: white;
+    border-radius: 5px;
   }
   &__card--03 {
     padding: 10px;
+    background-color: white;
+    border-radius: 5px;
   }
 }
 // Footer - links to my personal git, linkedin and cv, and my email
@@ -122,19 +137,31 @@ $body-font: "Jost", "Veranda", sans-serif;
   &__info {
     justify-content: center;
     align-items: center;
+    background-color: black;
   }
-
   &__info--tagline {
     font-family: $title-font;
     font-size: 2.5rem;
+    background-color: black;
   }
   &__info--email {
     font-size: 1rem;
     padding-bottom: 10px;
     font-family: $body-font;
+    background-color: black;
   }
   &__links {
     font-family: $body-font;
     font-size: 1rem;
+    background-color: black;
+  }
+  &__links--git {
+    background-color: black;
+  }
+  &__links--linkedin {
+    background-color: black;
+  }
+  &__links--cv {
+    background-color: black;
   }
 }
