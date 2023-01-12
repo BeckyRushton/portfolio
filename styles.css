@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .about__image {
   width: 80%;
@@ -57,9 +57,9 @@
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .skills__title {
   font-family: "Fjalla One", "Impact", sans-serif;
@@ -86,7 +86,7 @@
 .projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 50px;
