@@ -52,6 +52,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 .skills__title {
   font-family: "Fjalla One", "Impact", sans-serif;
@@ -74,10 +75,29 @@
 }
 
 .projects {
-  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
 }
 .projects__title {
   font-family: "Fjalla One", "Impact", sans-serif;
+  font-size: 2rem;
+  padding: 20px;
+}
+.projects__card {
+  width: 90%;
+  flex-wrap: wrap;
+}
+.projects__card--01 {
+  padding: 10px;
+}
+.projects__card--02 {
+  padding: 10px;
+}
+.projects__card--03 {
+  padding: 10px;
 }
 
 .contact {

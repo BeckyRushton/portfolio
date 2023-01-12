@@ -58,6 +58,7 @@ $body-font: "Jost", "Veranda", sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 
   &__title {
     font-family: $title-font;
@@ -81,9 +82,29 @@ $body-font: "Jost", "Veranda", sans-serif;
 }
 // Projects - title, links and previews of my projects
 .projects {
-  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+
   &__title {
     font-family: $title-font;
+    font-size: 2rem;
+    padding: 20px;
+  }
+  &__card {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  &__card--01 {
+    padding: 10px;
+  }
+  &__card--02 {
+    padding: 10px;
+  }
+  &__card--03 {
+    padding: 10px;
   }
 }
 // Footer - links to my personal git, linkedin and cv, and my email
