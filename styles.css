@@ -219,7 +219,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 80vh 60vh 40vh 2fr 4fr 2fr;
+    grid-template-rows: 10vh 90vh 60vh 40vh 2fr 4fr 2fr;
     grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about about about about" "skills skills skills skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
   }
   .navigation {
@@ -290,6 +290,7 @@ body {
     grid-area: profile;
     display: flex;
     justify-content: flex-end;
+    margin-right: 50px;
   }
   .about__image--pic {
     width: 50%;
@@ -301,9 +302,9 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 40%;
+    width: 60%;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .skills {
     grid-area: skills;
@@ -332,5 +333,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */
