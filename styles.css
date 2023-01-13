@@ -203,7 +203,6 @@ body {
 @media screen and (min-width: 768px) {
   body {
     height: 100vh;
-    width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 3fr 5fr 6fr 4fr 4fr 4fr 4fr 4fr 2fr;
@@ -217,6 +216,7 @@ body {
     justify-content: space-between;
     align-items: center;
     grid-area: nav;
+    width: 100vw;
   }
   .navigation__name {
     padding-left: 30px;
@@ -240,6 +240,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100vw;
   }
   .intro__title {
     padding-left: 100px;
@@ -311,5 +312,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    width: 100vw;
   }
 }/*# sourceMappingURL=styles.css.map */
