@@ -117,7 +117,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 80%;
     gap: 20px;
   }
 
@@ -126,8 +126,9 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 10px $title-text-colour;
     font-family: $body-font;
-    width: 370px;
+    width: 300px;
     display: flex;
+
     flex-direction: column;
   }
 
@@ -299,24 +300,36 @@ body {
   .about {
     grid-area: about;
     display: grid;
-    width: 70%;
+    width: 60%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     grid-template-areas: "profile about" "profile text";
 
     &__title {
-      width: 30%;
       grid-area: about;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 100%;
     }
 
     &__image {
       width: 30rem;
       grid-area: profile;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
     &__text {
-      width: 80%;
       text-align: start;
       grid-area: text;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      margin-top: 20px;
     }
   }
 
@@ -338,23 +351,15 @@ body {
     grid-area: projects;
     display: flex;
     flex-direction: column;
-
-    &__cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-    }
   }
-  // Footer section
-  .contact {
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    width: 100vw;
-  }
+}
+// Footer section
+.contact {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  width: 100vw;
 }
