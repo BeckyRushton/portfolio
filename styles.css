@@ -16,7 +16,7 @@ body {
 }
 .intro__title {
   font-family: "Fjalla One", "Impact", sans-serif;
-  color: rgb(8, 66, 56);
+  color: rgb(8, 63, 49);
   font-size: 4rem;
   padding: 20px;
   margin-bottom: 50px;
@@ -55,12 +55,12 @@ body {
   width: 80%;
   margin: 20px;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgb(8, 66, 56);
+  box-shadow: 5px 5px 10px rgb(8, 63, 49);
 }
 .about__title {
   font-family: "Fjalla One", "Impact", sans-serif;
   font-size: 2rem;
-  color: rgb(8, 66, 56);
+  color: rgb(8, 63, 49);
   padding-top: 20px;
 }
 .about__text {
@@ -81,7 +81,7 @@ body {
   font-family: "Fjalla One", "Impact", sans-serif;
   font-size: 2rem;
   padding: 15px;
-  color: rgb(8, 66, 56);
+  color: rgb(8, 63, 49);
 }
 .skills__text {
   font-family: "Jost", "Veranda", sans-serif;
@@ -111,7 +111,7 @@ body {
   font-family: "Fjalla One", "Impact", sans-serif;
   font-size: 2rem;
   padding: 20px;
-  color: rgb(8, 66, 56);
+  color: rgb(8, 63, 49);
 }
 .projects__container {
   display: flex;
@@ -125,16 +125,19 @@ body {
 .projects__window {
   background-color: white;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgb(8, 66, 56);
+  box-shadow: 5px 5px 10px rgb(8, 63, 49);
   font-family: "Jost", "Veranda", sans-serif;
-  max-width: 350px;
+  width: 350px;
   display: flex;
   flex-direction: column;
+}
+.projects__window:hover {
+  box-shadow: 5px 5px 20px rgb(20, 163, 127);
 }
 .projects__mainTitle {
   font-family: "Fjalla One", "Impact", sans-serif;
   font-size: 1.7rem;
-  color: rgb(8, 66, 56);
+  color: rgb(8, 63, 49);
   padding-left: 20px;
 }
 .projects__miniTitle {
@@ -163,14 +166,14 @@ body {
   font-weight: bold;
 }
 .projects__button--code {
-  border: 2px solid rgb(8, 66, 56);
+  border: 2px solid rgb(8, 63, 49);
 }
 .projects__button--code:hover {
   border: solid 2px rgb(20, 163, 127);
   padding: 8px;
 }
 .projects__button--preview {
-  border: 2px solid rgb(8, 66, 56);
+  border: 2px solid rgb(8, 63, 49);
 }
 .projects__button--preview:hover {
   border: solid 2px rgb(20, 163, 127);
@@ -185,7 +188,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 }
 .contact__info--tagline {
   font-family: "Fjalla One", "Impact", sans-serif;
@@ -359,7 +361,7 @@ body {
   }
   .intro__title {
     padding-left: 100px;
-    width: 80%;
+    width: 60%;
   }
   .intro__tagline {
     padding-left: 100px;
@@ -439,7 +441,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
     width: 100vw;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,7 @@ $title-font: "Fjalla One", "Impact", sans-serif;
 $body-font: "Jost", "Veranda", sans-serif;
 $background-colour: rgb(240, 241, 235);
 $body-text-colour: rgb(61, 61, 61);
-$title-text-colour: rgb(8, 66, 56);
+$title-text-colour: rgb(8, 63, 49);
 $selector-colour: rgb(20, 163, 127);
 
 * {
@@ -140,9 +140,12 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 10px $title-text-colour;
     font-family: $body-font;
-    max-width: 350px;
+    width: 350px;
     display: flex;
     flex-direction: column;
+  }
+  &__window:hover {
+    box-shadow: 5px 5px 20px $selector-colour;
   }
 
   &__mainTitle {
@@ -204,7 +207,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 
   &__info--tagline {
     font-family: $title-font;
@@ -418,7 +420,7 @@ body {
 
     &__title {
       padding-left: 100px;
-      width: 80%;
+      width: 60%;
     }
     &__tagline {
       padding-left: 100px;
@@ -511,7 +513,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
     width: 100vw;
   }
 }
