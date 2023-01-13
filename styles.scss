@@ -253,7 +253,6 @@ body {
     align-items: center;
     margin: 10px;
     grid-area: nav;
-    width: 100vw;
 
     &__name {
       padding-left: 30px;
@@ -281,7 +280,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100vw;
 
     &__title {
       padding-left: 80px;
@@ -363,7 +361,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
-    width: 100vw;
   }
 }
 // Desktop version ------
@@ -394,7 +391,6 @@ body {
     align-items: center;
     margin: 10px;
     grid-area: nav;
-    width: 100vw;
 
     &__name {
       padding-left: 30px;
@@ -422,7 +418,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100vw;
 
     &__title {
       padding-left: 100px;
@@ -438,9 +433,9 @@ body {
     }
   }
 
-  main {
-    width: 100vw;
-  }
+  // main {
+  //   width: 100vw;
+  // }
 
   // About section - profile image and greeting
   .container__about {
@@ -519,6 +514,5 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
   }
 }
