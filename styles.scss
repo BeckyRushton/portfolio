@@ -191,6 +191,7 @@ body {
     border: solid 2px $selector-colour;
     padding: 8px;
     cursor: pointer;
+    color: $selector-colour;
   }
   &__button--preview {
     border: 2px solid $title-text-colour;
@@ -199,6 +200,7 @@ body {
     border: solid 2px $selector-colour;
     padding: 8px;
     cursor: pointer;
+    color: $selector-colour;
   }
 }
 
