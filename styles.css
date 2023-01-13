@@ -137,6 +137,7 @@ body {
   width: 350px;
   display: flex;
   flex-direction: column;
+  transition: 200ms;
 }
 .projects__window:hover {
   box-shadow: 5px 5px 20px rgb(20, 163, 127);
@@ -171,6 +172,7 @@ body {
   align-items: center;
   margin-bottom: 10px;
   font-weight: bold;
+  transition: 200ms;
 }
 .projects__button--code {
   border: 2px solid rgb(8, 63, 49);

@@ -155,6 +155,7 @@ body {
     width: 350px;
     display: flex;
     flex-direction: column;
+    transition: 200ms;
   }
   &__window:hover {
     box-shadow: 5px 5px 20px $selector-colour;
@@ -192,6 +193,7 @@ body {
     align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
+    transition: 200ms;
   }
 
   &__button--code {
@@ -250,6 +252,7 @@ body {
     cursor: pointer;
   }
 }
+
 // Desktop version ------
 @media screen and (min-width: 1024px) {
   body {
