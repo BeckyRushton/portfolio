@@ -35,6 +35,10 @@ body {
 .navigation {
   display: none;
 }
+.navigation__links--home:hover, .navigation__links--about:hover, .navigation__links--projects:hover {
+  color: rgb(20, 163, 127);
+  font-weight: bold;
+}
 
 .about {
   display: flex;

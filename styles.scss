@@ -42,6 +42,12 @@ body {
 // Navigation
 .navigation {
   display: none;
+  &__links--home:hover,
+  &__links--about:hover,
+  &__links--projects:hover {
+    color: $selector-colour;
+    font-weight: bold;
+  }
 }
 // About - title, image and text about me
 .about {
