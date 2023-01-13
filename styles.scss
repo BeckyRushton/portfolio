@@ -133,7 +133,7 @@ body {
 
   &__mainTitle {
     font-family: $title-font;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: $title-text-colour;
     padding-left: 20px;
   }
@@ -141,7 +141,7 @@ body {
   &__miniTitle {
     font-family: $body-font;
     color: $body-text-colour;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-left: 20px;
   }
 
@@ -164,6 +164,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   &__button--code {
     border: 1px solid $title-text-colour;
