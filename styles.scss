@@ -56,7 +56,9 @@ body {
   }
   &__image--pic {
     width: 80%;
-    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px $title-text-colour;
   }
   &__title {
     font-family: $title-font;
