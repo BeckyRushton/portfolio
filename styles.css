@@ -123,7 +123,7 @@ body {
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgb(8, 66, 56);
   font-family: "Jost", "Veranda", sans-serif;
-  width: 350px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
 }
@@ -159,10 +159,18 @@ body {
   font-weight: bold;
 }
 .projects__button--code {
-  border: 1px solid rgb(8, 66, 56);
+  border: 2px solid rgb(8, 66, 56);
+}
+.projects__button--code:hover {
+  border: solid 2px rgb(20, 163, 127);
+  padding: 8px;
 }
 .projects__button--preview {
-  border: 1px solid rgb(8, 66, 56);
+  border: 2px solid rgb(8, 66, 56);
+}
+.projects__button--preview:hover {
+  border: solid 2px rgb(20, 163, 127);
+  padding: 8px;
 }
 
 .contact {
@@ -268,6 +276,7 @@ body {
     grid-area: profile;
     display: flex;
     justify-content: flex-end;
+    margin: 10px;
   }
   .about__image--pic {
     width: 30rem;

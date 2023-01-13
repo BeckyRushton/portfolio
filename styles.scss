@@ -5,6 +5,7 @@ $body-font: "Jost", "Veranda", sans-serif;
 $background-colour: rgb(240, 241, 235);
 $body-text-colour: rgb(61, 61, 61);
 $title-text-colour: rgb(8, 66, 56);
+$selector-colour: rgb(20, 163, 127);
 
 * {
   padding: 0;
@@ -133,9 +134,8 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 10px $title-text-colour;
     font-family: $body-font;
-    width: 350px;
+    max-width: 350px;
     display: flex;
-
     flex-direction: column;
   }
 
@@ -172,11 +172,20 @@ body {
     margin-bottom: 10px;
     font-weight: bold;
   }
+
   &__button--code {
-    border: 1px solid $title-text-colour;
+    border: 2px solid $title-text-colour;
+  }
+  &__button--code:hover {
+    border: solid 2px $selector-colour;
+    padding: 8px;
   }
   &__button--preview {
-    border: 1px solid $title-text-colour;
+    border: 2px solid $title-text-colour;
+  }
+  &__button--preview:hover {
+    border: solid 2px $selector-colour;
+    padding: 8px;
   }
 }
 
@@ -302,6 +311,7 @@ body {
       grid-area: profile;
       display: flex;
       justify-content: flex-end;
+      margin: 10px;
     }
     &__image--pic {
       width: 30rem;
