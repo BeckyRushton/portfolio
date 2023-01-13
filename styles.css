@@ -269,7 +269,7 @@ body {
   }
   .intro__artwork {
     display: block;
-    padding-right: 80px;
+    padding-right: 50px;
   }
   .container__about {
     grid-area: about;
@@ -280,7 +280,7 @@ body {
     flex-direction: row;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: "profile about" "profile txt";
     width: 100%;
   }
