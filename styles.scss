@@ -147,7 +147,6 @@ body {
   }
   &__window:hover {
     box-shadow: 5px 5px 20px $selector-colour;
-    cursor: pointer;
   }
 
   &__mainTitle {
@@ -222,6 +221,12 @@ body {
     font-size: 1rem;
     padding-bottom: 10px;
     font-family: $body-font;
+  }
+
+  &__icon--git:hover,
+  &__icon--linkedin:hover,
+  &__icon--cv:hover {
+    cursor: pointer;
   }
 }
 
@@ -428,6 +433,7 @@ body {
   // About section - profile image and greeting
   .container__about {
     grid-area: about;
+    margin-bottom: 50px;
   }
   .about {
     display: flex;
@@ -463,6 +469,7 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+      width: 40%;
       height: 100%;
       margin-top: 20px;
     }
