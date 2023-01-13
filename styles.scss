@@ -42,6 +42,17 @@ body {
 // Navigation
 .navigation {
   display: none;
+  &__links--home,
+  &__links--about,
+  &__links--projects {
+    text-decoration: none;
+  }
+
+  &__links--home:visited,
+  &__links--about:visited,
+  &__links--projects:visited {
+    color: $body-text-colour;
+  }
   &__links--home:hover,
   &__links--about:hover,
   &__links--projects:hover {
@@ -85,7 +96,7 @@ body {
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-bottom: 50px;
 
@@ -244,7 +255,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 90vh 60vh 40vh 2fr 4fr 2fr;
+    grid-template-rows: 10vh 90vh 60vh 60vh 100vh 20vh;
     grid-template-areas:
       "navigation navigation navigation navigation navigation navigation"
       "intro intro intro intro intro intro"

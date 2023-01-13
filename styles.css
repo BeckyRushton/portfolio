@@ -35,6 +35,12 @@ body {
 .navigation {
   display: none;
 }
+.navigation__links--home, .navigation__links--about, .navigation__links--projects {
+  text-decoration: none;
+}
+.navigation__links--home:visited, .navigation__links--about:visited, .navigation__links--projects:visited {
+  color: rgb(61, 61, 61);
+}
 .navigation__links--home:hover, .navigation__links--about:hover, .navigation__links--projects:hover {
   color: rgb(20, 163, 127);
   font-weight: bold;
@@ -74,7 +80,7 @@ body {
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-bottom: 50px;
 }
@@ -219,7 +225,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 90vh 60vh 40vh 2fr 4fr 2fr;
+    grid-template-rows: 10vh 90vh 60vh 60vh 100vh 20vh;
     grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about about about about" "skills skills skills skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
   }
   .navigation {

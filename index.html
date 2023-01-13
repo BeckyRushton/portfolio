@@ -12,31 +12,31 @@
     <nav class="navigation">
       <div class="navigation__name">Becky Rushton</div>
       <div class="navigation__links">
-        <div class="navigation__links--home">Home</div>
-        <div class="navigation__links--about">About</div>
-        <div class="navigation__links--projects">Projects</div>
+        <a href="#intro__top" class="navigation__links--home">Home</a>
+        <a href="#about__top" class="navigation__links--about">About</a>
+        <a href="#project__top" class="navigation__links--projects">Projects</a>
       </div>
     </nav>
     <!-- Head of the webpage including tagline and title statement-->
-    <header class="intro">
+    <header id="intro__top" class="intro">
       <div class="intro__text">
         <p class="intro__tagline">👋 Hey! I'm Becky Rushton</p>
         <h1 class="intro__title">
           Junior Software Developer based in London, UK.
         </h1>
+      
       </div>
       <img
         class="intro__artwork"
         src="./images/programmer-icon.png"
-        alt="Female with laptop and coding symbol in speech bubble"
-      />
+        alt="Female with laptop and coding symbol in speech bubble"/>
     </header>
 
     <!-- Main sections of webpage including about me, technical skills, projects-->
     
       <!-- Container for about section with title, image and intro text -->
       <article class="container__about">
-        <div class="about">
+        <div id="about__top" class="about">
           <h3 class="about__title">About Me</h3>
           <div class="about__image"><img
             class="about__image--pic"
@@ -110,7 +110,7 @@
         </p>
       </article>
       <!-- Container for projects with title and links to each project -->
-      <article class="projects">
+      <article id="project__top" class="projects">
         <h3 class="projects__title">Projects</h3>
         <div class="projects__container">
           <!-- Project 1 -->
