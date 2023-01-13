@@ -94,7 +94,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
   padding-bottom: 50px;
 }
 .projects__title {
@@ -105,15 +104,19 @@ body {
 }
 .projects__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 60%;
+  gap: 20px;
 }
 .projects__window {
   background-color: white;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgb(8, 66, 56);
   font-family: "Jost", "Veranda", sans-serif;
-  width: 30%;
+  width: 370px;
   display: flex;
   flex-direction: column;
 }

@@ -103,7 +103,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
   padding-bottom: 50px;
 
   &__title {
@@ -114,8 +113,12 @@ body {
   }
   &__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 60%;
+    gap: 20px;
   }
 
   &__window {
@@ -123,7 +126,7 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 10px $title-text-colour;
     font-family: $body-font;
-    width: 30%;
+    width: 370px;
     display: flex;
     flex-direction: column;
   }
