@@ -90,7 +90,7 @@ body {
     font-size: 1rem;
     text-align: center;
     padding: 10px;
-    width: 50%;
+    width: 80%;
     color: $body-text-colour;
     margin-top: 1rem;
   }
@@ -185,39 +185,18 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
 
-  &__info {
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-  }
   &__info--tagline {
     font-family: $title-font;
     font-size: 2.5rem;
-    background-color: black;
   }
   &__info--email {
     font-size: 1rem;
     padding-bottom: 10px;
     font-family: $body-font;
-    background-color: black;
-  }
-  &__links {
-    font-family: $body-font;
-    font-size: 1rem;
-    background-color: black;
-  }
-  &__links--git {
-    background-color: black;
-  }
-  &__links--linkedin {
-    background-color: black;
-  }
-  &__links--cv {
-    background-color: black;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -348,6 +327,9 @@ body {
       display: flex;
       flex-direction: row;
     }
+    &__text {
+      width: 40%;
+    }
   }
 
   // Projects section
@@ -356,14 +338,15 @@ body {
     display: flex;
     flex-direction: column;
   }
-}
-// Footer section
-.contact {
-  grid-area: footer;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  width: 100vw;
+
+  // Footer section
+  .contact {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100vw;
+  }
 }
