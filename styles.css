@@ -38,6 +38,7 @@ body {
 .navigation__links--home:hover, .navigation__links--about:hover, .navigation__links--projects:hover {
   color: rgb(20, 163, 127);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .about {
@@ -133,6 +134,7 @@ body {
 }
 .projects__window:hover {
   box-shadow: 5px 5px 20px rgb(20, 163, 127);
+  cursor: pointer;
 }
 .projects__mainTitle {
   font-family: "Fjalla One", "Impact", sans-serif;
@@ -171,6 +173,7 @@ body {
 .projects__button--code:hover {
   border: solid 2px rgb(20, 163, 127);
   padding: 8px;
+  cursor: pointer;
 }
 .projects__button--preview {
   border: 2px solid rgb(8, 63, 49);
@@ -178,6 +181,7 @@ body {
 .projects__button--preview:hover {
   border: solid 2px rgb(20, 163, 127);
   padding: 8px;
+  cursor: pointer;
 }
 
 .contact {

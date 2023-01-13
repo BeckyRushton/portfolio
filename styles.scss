@@ -47,6 +47,7 @@ body {
   &__links--projects:hover {
     color: $selector-colour;
     font-weight: bold;
+    cursor: pointer;
   }
 }
 // About - title, image and text about me
@@ -146,6 +147,7 @@ body {
   }
   &__window:hover {
     box-shadow: 5px 5px 20px $selector-colour;
+    cursor: pointer;
   }
 
   &__mainTitle {
@@ -188,6 +190,7 @@ body {
   &__button--code:hover {
     border: solid 2px $selector-colour;
     padding: 8px;
+    cursor: pointer;
   }
   &__button--preview {
     border: 2px solid $title-text-colour;
@@ -195,6 +198,7 @@ body {
   &__button--preview:hover {
     border: solid 2px $selector-colour;
     padding: 8px;
+    cursor: pointer;
   }
 }
 
