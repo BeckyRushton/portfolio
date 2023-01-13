@@ -221,6 +221,16 @@ body {
     font-size: 1rem;
     padding-bottom: 10px;
     font-family: $body-font;
+    text-decoration: none;
+  }
+  &__info--email:link,
+  &__info--email:visited {
+    color: white;
+  }
+
+  &__info--email:hover {
+    color: $selector-colour;
+    cursor: pointer;
   }
 
   &__icon--git:hover,

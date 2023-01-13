@@ -202,6 +202,14 @@ body {
   font-size: 1rem;
   padding-bottom: 10px;
   font-family: "Jost", "Veranda", sans-serif;
+  text-decoration: none;
+}
+.contact__info--email:link, .contact__info--email:visited {
+  color: white;
+}
+.contact__info--email:hover {
+  color: rgb(20, 163, 127);
+  cursor: pointer;
 }
 .contact__icon--git:hover, .contact__icon--linkedin:hover, .contact__icon--cv:hover {
   cursor: pointer;
