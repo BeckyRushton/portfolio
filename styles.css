@@ -223,6 +223,146 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 60vh 60vh 60vh 90vh 20vh;
+    grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about skills skills skills" "about about about skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
+  }
+  .navigation {
+    font-family: "Jost", "Veranda", sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: navigation;
+  }
+  .navigation__name {
+    padding-left: 20px;
+  }
+  .navigation__links {
+    padding-right: 30px;
+    display: flex;
+  }
+  .navigation__links--home {
+    padding: 5px;
+  }
+  .navigation__links--about {
+    padding: 5px;
+  }
+  .navigation__links--projects {
+    padding: 5px;
+  }
+  .intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .intro__title {
+    padding-left: 50px;
+    font-size: 3rem;
+  }
+  .intro__tagline {
+    display: none;
+  }
+  .intro__artwork {
+    display: block;
+    width: 60%;
+  }
+  .container__about {
+    grid-area: about;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "about" "profile" "txt";
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: about;
+    font-size: 2rem;
+    margin-top: 35px;
+  }
+  .about__image {
+    grid-area: profile;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__image--pic {
+    width: 60%;
+  }
+  .about__text {
+    grid-area: txt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 45px;
+  }
+  .skills {
+    padding: 0;
+    margin: 0;
+    grid-area: skills;
+  }
+  .skills__title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 28px;
+    margin-bottom: 40px;
+  }
+  .skills__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .skills__text {
+    width: 85%;
+    margin-top: 20px;
+  }
+  .skills__icons--html, .skills__icons--git, .skills__icons--css, .skills__icons--javascript, .skills__icons--java, .skills__icons--bem, .skills__icons--springboot, .skills__icons--scss, .skills__icons--react {
+    height: 85px;
+  }
+  .projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects__window {
+    margin: 6px;
+  }
+  .contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 @media screen and (min-width: 1024px) {
   body {
     display: grid;
