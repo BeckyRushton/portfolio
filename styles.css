@@ -32,6 +32,10 @@ body {
   display: none;
 }
 
+#highlighter {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgb(20, 163, 127) 65%);
+}
+
 .navigation {
   display: none;
 }
