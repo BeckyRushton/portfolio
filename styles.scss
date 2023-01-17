@@ -258,7 +258,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20vh 60vh 60vh 60vh 90vh 20vh;
+    grid-template-rows: 5vh 30vh 20vh 20vh 20vh 100vh 120vh 10vh;
     grid-template-areas:
       "navigation navigation navigation navigation navigation navigation"
       "intro intro intro intro intro intro"
@@ -285,6 +285,7 @@ body {
 
     &__links {
       display: flex;
+      padding-right: 20px;
     }
     &__links--home {
       padding: 5px;
@@ -307,10 +308,12 @@ body {
 
     &__title {
       padding-left: 50px;
-      font-size: 4rem;
+      font-size: 3rem;
     }
     &__tagline {
       display: flex;
+      padding-left: 50px;
+      font-size: 1.2rem;
     }
     &__artwork {
       display: block;
@@ -325,57 +328,33 @@ body {
   .about {
     display: flex;
     flex-direction: column;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas:
-      "about"
-      "profile"
-      "txt";
-    width: 100%;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
 
     &__title {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      grid-area: about;
       font-size: 2rem;
-      margin-top: 35px;
     }
     &__image {
-      grid-area: profile;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin: 30px;
     }
     &__image--pic {
-      width: 60%;
+      width: 80%;
     }
     &__text {
-      grid-area: txt;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       width: 80%;
     }
   }
 
   // Skills section
   .skills {
-    padding: 0;
-    margin: 0;
     grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     &__title {
       font-size: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin-top: 28px;
-      margin-bottom: 40px;
     }
 
     &__icons {
@@ -384,12 +363,10 @@ body {
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
-      width: 50%;
+      width: 60%;
     }
     &__text {
       width: 85%;
-      margin-top: 20px;
-      margin-bottom: 30px;
     }
     &__icons--html,
     &__icons--git,
@@ -400,7 +377,7 @@ body {
     &__icons--springboot,
     &__icons--scss,
     &__icons--react {
-      height: 85px;
+      height: 80px;
     }
   }
 
