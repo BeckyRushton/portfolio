@@ -134,7 +134,7 @@ body {
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgb(8, 63, 49);
   font-family: "Jost", "Veranda", sans-serif;
-  width: 350px;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   transition: 200ms;
@@ -345,7 +345,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 90vh 60vh 60vh 100vh 20vh;
+    grid-template-rows: 10vh 30vh 25vh 20vh 60vh 20vh;
     grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about about about about" "skills skills skills skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
   }
   .navigation {
@@ -393,11 +393,12 @@ body {
   }
   .container__about {
     grid-area: about;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .about {
-    display: flex;
-    flex-direction: row;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr;
@@ -419,7 +420,7 @@ body {
     margin-right: 50px;
   }
   .about__image--pic {
-    width: 50%;
+    width: 80%;
   }
   .about__text {
     text-align: start;
@@ -428,30 +429,40 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 60%;
+    width: 80%;
     height: 100%;
     margin-top: 50px;
   }
   .skills {
     grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .skills__title {
-    margin: 20px;
+    margin-bottom: 20px;
   }
   .skills__icons {
     display: flex;
     flex-direction: row;
+    width: 80%;
   }
   .skills__text {
-    width: 40%;
+    width: 70%;
   }
   .projects {
     grid-area: projects;
-    display: flex;
-    flex-direction: column;
   }
   .projects__window {
     margin: 6px;
+    width: 28%;
+  }
+  .projects__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .contact {
     grid-area: contact;
