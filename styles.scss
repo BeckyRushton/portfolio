@@ -284,7 +284,6 @@ body {
     }
 
     &__links {
-      padding-right: 30px;
       display: flex;
     }
     &__links--home {
@@ -308,10 +307,10 @@ body {
 
     &__title {
       padding-left: 50px;
-      font-size: 3rem;
+      font-size: 4rem;
     }
     &__tagline {
-      display: none;
+      display: flex;
     }
     &__artwork {
       display: block;
@@ -361,7 +360,6 @@ body {
       justify-content: center;
       align-items: center;
       width: 80%;
-      margin-left: 45px;
     }
   }
 
@@ -387,11 +385,11 @@ body {
       align-items: center;
       flex-wrap: wrap;
       width: 50%;
-      margin-bottom: 30px;
     }
     &__text {
       width: 85%;
       margin-top: 20px;
+      margin-bottom: 30px;
     }
     &__icons--html,
     &__icons--git,

@@ -243,7 +243,6 @@ body {
     padding-left: 20px;
   }
   .navigation__links {
-    padding-right: 30px;
     display: flex;
   }
   .navigation__links--home {
@@ -264,10 +263,10 @@ body {
   }
   .intro__title {
     padding-left: 50px;
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .intro__tagline {
-    display: none;
+    display: flex;
   }
   .intro__artwork {
     display: block;
@@ -311,7 +310,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin-left: 45px;
   }
   .skills {
     padding: 0;
@@ -333,11 +331,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
     width: 50%;
-    margin-bottom: 30px;
   }
   .skills__text {
     width: 85%;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
   .skills__icons--html, .skills__icons--git, .skills__icons--css, .skills__icons--javascript, .skills__icons--java, .skills__icons--bem, .skills__icons--springboot, .skills__icons--scss, .skills__icons--react {
     height: 85px;
