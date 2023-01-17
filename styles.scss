@@ -419,7 +419,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 30vh 25vh 20vh 60vh 20vh;
+    grid-template-rows: 10vh 80vh 25vh 60vh 60vh 20vh;
     grid-template-areas:
       "navigation navigation navigation navigation navigation navigation"
       "intro intro intro intro intro intro"
