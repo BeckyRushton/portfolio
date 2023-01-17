@@ -231,7 +231,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5vh 30vh 20vh 20vh 20vh 100vh 120vh 10vh;
+    grid-template-rows: 10vh 60vh 20vh 50vh 50vh 100vh 10 0vh 10vh;
     grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about skills skills skills" "about about about skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
   }
   .navigation {
@@ -242,6 +242,7 @@ body {
     justify-content: space-between;
     align-items: center;
     grid-area: navigation;
+    padding: 10px;
   }
   .navigation__name {
     padding-left: 20px;
@@ -331,9 +332,23 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .projects__window {
     margin: 6px;
+  }
+  .projects {
+    grid-area: projects;
+  }
+  .projects__window {
+    margin: 6px;
+    width: 35%;
+  }
+  .projects__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .contact {
     grid-area: contact;
@@ -349,7 +364,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 80vh 25vh 60vh 60vh 20vh;
+    grid-template-rows: 10vh 80vh 50vh 40vh 80vh 20vh;
     grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about about about about" "skills skills skills skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
   }
   .navigation {
@@ -446,6 +461,7 @@ body {
   }
   .skills__title {
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   .skills__icons {
     display: flex;
