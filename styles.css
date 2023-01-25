@@ -41,6 +41,7 @@ body {
 }
 .navigation__links--home, .navigation__links--about, .navigation__links--projects {
   text-decoration: none;
+  color: rgb(61, 61, 61);
 }
 .navigation__links--home:visited, .navigation__links--about:visited, .navigation__links--projects:visited {
   color: rgb(61, 61, 61);
@@ -368,6 +369,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 10vh 70vh 40vh 40vh 80vh 20vh;
     grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about about about about" "skills skills skills skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
+    max-width: 1600px;
   }
   .navigation {
     font-family: "Jost", "Veranda", sans-serif;
@@ -495,19 +497,4 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
-}
-@media screen and (min-width: 1400px) {
-  .navigation {
-    font-size: 2rem;
-  }
-  .about__image--pic {
-    width: 70%;
-  }
-}
-.skills__icons {
-  width: 60%;
-}
-
-.skills__text {
-  width: 60%;
 }/*# sourceMappingURL=styles.css.map */

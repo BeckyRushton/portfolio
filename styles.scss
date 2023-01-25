@@ -53,6 +53,7 @@ body {
   &__links--about,
   &__links--projects {
     text-decoration: none;
+    color: $body-text-colour;
   }
 
   &__links--home:visited,
@@ -447,6 +448,7 @@ body {
       "projects projects projects projects projects projects"
       "projects projects projects projects projects projects"
       "contact contact contact contact contact contact";
+    max-width: 1600px;
   }
   // Nav bar - visible in desktop version
   .navigation {
@@ -594,22 +596,4 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
-}
-
-// Largest screens
-@media screen and (min-width: 1400px) {
-  .navigation {
-    font-size: 2rem;
-  }
-
-  .about__image--pic {
-    width: 70%;
-  }
-}
-
-.skills__icons {
-  width: 60%;
-}
-.skills__text {
-  width: 60%;
 }
