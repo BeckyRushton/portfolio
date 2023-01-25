@@ -160,8 +160,10 @@ body {
     box-shadow: 5px 5px 10px $title-text-colour;
     font-family: $body-font;
     width: 20rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     transition: 200ms;
   }
   &__window:hover {
@@ -435,7 +437,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 80vh 50vh 40vh 80vh 20vh;
+    grid-template-rows: 10vh 70vh 40vh 40vh 80vh 20vh;
     grid-template-areas:
       "navigation navigation navigation navigation navigation navigation"
       "intro intro intro intro intro intro"
@@ -592,4 +594,22 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+// Largest screens
+@media screen and (min-width: 1400px) {
+  .navigation {
+    font-size: 2rem;
+  }
+
+  .about__image--pic {
+    width: 70%;
+  }
+}
+
+.skills__icons {
+  width: 60%;
+}
+.skills__text {
+  width: 60%;
 }
