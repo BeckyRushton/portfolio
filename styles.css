@@ -7,6 +7,15 @@
 
 body {
   background-color: rgb(240, 241, 235);
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  height: 100%;
 }
 
 .intro {
@@ -144,7 +153,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  transition: 200ms;
+  transition: 300ms;
 }
 .projects__window:hover {
   box-shadow: 5px 5px 20px rgb(20, 163, 127);
@@ -160,6 +169,7 @@ body {
   color: rgb(61, 61, 61);
   font-size: 1.2rem;
   padding-left: 20px;
+  margin-top: 20px;
 }
 .projects__text {
   color: rgb(61, 61, 61);
@@ -167,37 +177,64 @@ body {
 }
 .projects__image {
   display: flex;
-  margin: 20px;
+  padding: 30px;
+  margin-top: 20px;
 }
 .projects__button {
   border-radius: 5px;
-  padding: 10px;
+  padding: 30px;
   background-color: white;
+  color: rgb(8, 63, 49);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 20px;
   align-items: center;
-  margin-bottom: 10px;
-  font-weight: bold;
-  transition: 200ms;
+  margin-bottom: 20px;
 }
 .projects__button--code {
   border: 2px solid rgb(8, 63, 49);
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.projects__button--code:visited {
+  color: rgb(8, 63, 49);
 }
 .projects__button--code:hover {
   border: solid 2px rgb(20, 163, 127);
-  padding: 8px;
   cursor: pointer;
   color: rgb(20, 163, 127);
+  transition: 400ms;
+  font-size: 1.5rem;
 }
 .projects__button--preview {
   border: 2px solid rgb(8, 63, 49);
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.projects__button--preview:visited {
+  color: rgb(8, 63, 49);
 }
 .projects__button--preview:hover {
   border: solid 2px rgb(20, 163, 127);
-  padding: 8px;
   cursor: pointer;
   color: rgb(20, 163, 127);
+  transition: 400ms;
+  font-size: 1.5rem;
 }
 
 .contact {
@@ -231,7 +268,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .display {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 10vh 60vh 20vh 50vh 50vh 100vh 10 0vh 10vh;
@@ -364,12 +401,12 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
+  .display {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 10vh 70vh 40vh 40vh 80vh 20vh;
     grid-template-areas: "navigation navigation navigation navigation navigation navigation" "intro intro intro intro intro intro" "about about about about about about" "skills skills skills skills skills skills" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "projects projects projects projects projects projects" "contact contact contact contact contact contact";
-    max-width: 1600px;
+    max-width: 1400px;
   }
   .navigation {
     font-family: "Jost", "Veranda", sans-serif;
