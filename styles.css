@@ -411,7 +411,7 @@ body {
   .navigation {
     font-family: "Jost", "Veranda", sans-serif;
     color: rgb(61, 61, 61);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -443,9 +443,11 @@ body {
   }
   .intro__title {
     padding-left: 100px;
+    font-size: 5rem;
   }
   .intro__tagline {
     padding-left: 100px;
+    font-size: 2rem;
   }
   .intro__artwork {
     display: block;
@@ -472,6 +474,7 @@ body {
     align-items: flex-end;
     height: 100%;
     grid-area: about;
+    font-size: 3rem;
   }
   .about__image {
     grid-area: profile;
@@ -492,6 +495,7 @@ body {
     width: 80%;
     height: 100%;
     margin-top: 50px;
+    font-size: 1.5rem;
   }
   .skills {
     grid-area: skills;
@@ -503,6 +507,7 @@ body {
   .skills__title {
     margin-bottom: 20px;
     margin-top: 20px;
+    font-size: 3rem;
   }
   .skills__icons {
     display: flex;
@@ -511,9 +516,13 @@ body {
   }
   .skills__text {
     width: 70%;
+    font-size: 1.5rem;
   }
   .projects {
     grid-area: projects;
+  }
+  .projects__title {
+    font-size: 3rem;
   }
   .projects__window {
     margin: 6px;
