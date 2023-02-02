@@ -173,12 +173,12 @@ body {
 }
 .projects__text {
   color: rgb(61, 61, 61);
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .projects__image {
   display: flex;
-  padding: 30px;
-  margin-top: 20px;
+  margin: 20px;
 }
 .projects__button {
   border-radius: 5px;
