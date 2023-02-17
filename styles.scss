@@ -88,11 +88,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    width: 70%;
+    margin: 20px;
   }
   &__image--pic {
-    width: 80%;
-    margin: 20px;
     border-radius: 5px;
+    width: 60%;
     box-shadow: 5px 5px 10px $title-text-colour;
   }
   &__title {

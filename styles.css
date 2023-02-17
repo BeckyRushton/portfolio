@@ -71,11 +71,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 70%;
+  margin: 20px;
 }
 .about__image--pic {
-  width: 80%;
-  margin: 20px;
   border-radius: 5px;
+  width: 60%;
   box-shadow: 5px 5px 10px rgb(8, 63, 49);
 }
 .about__title {
