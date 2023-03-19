@@ -1,11 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Jost&display=swap");
-
-$title-font: "Fjalla One", "Impact", sans-serif;
-$body-font: "Jost", "Veranda", sans-serif;
-$background-colour: rgb(240, 241, 235);
-$body-text-colour: rgb(61, 61, 61);
-$title-text-colour: rgb(8, 63, 49);
-$selector-colour: rgb(20, 163, 127);
+@import "./variables";
 
 * {
   padding: 0;
@@ -27,14 +20,14 @@ body {
 .intro {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
 
   &__title {
     font-family: $title-font;
     color: $title-text-colour;
     font-size: 4rem;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
   }
@@ -73,7 +66,6 @@ body {
   &__links--about:hover,
   &__links--projects:hover {
     color: $selector-colour;
-
     cursor: pointer;
     transition: 300ms;
   }
@@ -85,12 +77,24 @@ body {
   align-items: center;
   padding-bottom: 50px;
 
+  &__hashtag {
+    font-weight: bold;
+    color: $selector-colour;
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  &__hashtag:hover {
+    transition: 400ms;
+    color: $title-text-colour;
+    font-size: 1.6rem;
+  }
+
   &__image {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 70%;
-    margin: 20px;
+    margin: 30px;
   }
   &__image--pic {
     border-radius: 5px;
@@ -204,6 +208,7 @@ body {
   &__image {
     display: flex;
     margin: 20px;
+    height: 40%;
   }
   &__button {
     border-radius: 5px;
@@ -269,12 +274,15 @@ body {
 // Footer - links to my personal git, linkedin and cv, and my email
 .contact {
   height: 200px;
-  background-color: black;
+  background-color: $body-text-colour;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  &__code-heart {
+    width: 10%;
+  }
 
   &__info--tagline {
     font-family: $title-font;
@@ -355,12 +363,12 @@ body {
     grid-area: intro;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     &__title {
       padding-left: 50px;
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
     &__tagline {
       display: flex;
@@ -369,7 +377,7 @@ body {
     }
     &__artwork {
       display: block;
-      width: 60%;
+      width: 50%;
     }
   }
 
@@ -489,7 +497,7 @@ body {
       "projects projects projects projects projects projects"
       "projects projects projects projects projects projects"
       "contact contact contact contact contact contact";
-    max-width: 1400px;
+    max-width: 1440px;
   }
   // Nav bar - visible in desktop version
   .navigation {
@@ -524,18 +532,14 @@ body {
   // Intro
   .intro {
     grid-area: intro;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
     &__title {
       padding-left: 100px;
-      font-size: 5rem;
+      font-size: 4rem;
     }
     &__tagline {
       padding-left: 100px;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     &__artwork {
       display: block;
@@ -585,10 +589,11 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
       width: 85%;
       height: 100%;
-      margin-top: 30px;
+      padding: 10px 0;
+      margin: 50px 0;
       font-size: 1.5rem;
     }
   }
@@ -600,20 +605,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 
     &__title {
-      margin-bottom: 20px;
-      margin-top: 20px;
+      padding-top: 20px;
       font-size: 3rem;
     }
 
     &__icons {
       display: flex;
       flex-direction: row;
-      width: 80%;
+      width: 90%;
+      padding: 20px;
     }
     &__text {
-      width: 70%;
+      width: 80%;
       font-size: 1.5rem;
     }
   }
@@ -628,7 +634,8 @@ body {
 
     &__window {
       margin: 6px;
-      width: 28%;
+      width: 30%;
+      overflow: hidden;
     }
     &__container {
       display: flex;
