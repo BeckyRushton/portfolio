@@ -57,8 +57,8 @@ body {
 }
 .navigation__links--home:hover, .navigation__links--about:hover, .navigation__links--projects:hover {
   color: rgb(20, 163, 127);
-  font-weight: bold;
   cursor: pointer;
+  transition: 300ms;
 }
 
 .about {
@@ -263,6 +263,7 @@ body {
 .contact__info--email:hover {
   color: rgb(20, 163, 127);
   cursor: pointer;
+  transition: 300ms;
 }
 .contact__icon--git:hover, .contact__icon--linkedin:hover, .contact__icon--cv:hover {
   cursor: pointer;
@@ -464,8 +465,8 @@ body {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: "profile about" "profile txt";
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: "profile about" "profile txt" "profile txt";
     width: 100%;
   }
   .about__title {
@@ -493,9 +494,9 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 85%;
     height: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 1.5rem;
   }
   .skills {
